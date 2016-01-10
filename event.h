@@ -9,7 +9,6 @@ using namespace std;
 
 struct event {
     time_t date;
-    time_t time;
     int duration;
     string group;
     string description;

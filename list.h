@@ -10,6 +10,13 @@ struct list {
     event *first; //wskaznik na pczatek listy
     void add_event(struct event e);
     // void delete_event ();
+    void add_event_manually();
+    void search_date(string date);
+    void search_group(string group);
+    void search_description(string description);
+    void UsunEventPoDacie(string date);
+    void Sortuj();
+    void menu();
     void ZapiszDoPliku();
     void Wypisz();
     void WczytajZPliku();

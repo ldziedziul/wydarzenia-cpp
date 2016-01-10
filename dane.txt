@@ -1,6 +1,12 @@
-67996971-10-25 10:37 130
-CoderDojo
-Super klub hakerow.
-2016-12-25 11:37 45
-Unity Tutorial
-Kurs nauki gier.
+2016-01-07 16:50 120
+Blender
+Program do tworzenia grafiki 3d.
+2016-01-06 12:50 45
+Unity 3D
+Program do tworzenia gier.
+2016-03-07 16:50 120
+Tibia
+Gra 2d pierwsze MMORPG.
+2016-01-27 16:50 120
+Plemiona
+Gra przegladarkowa.
