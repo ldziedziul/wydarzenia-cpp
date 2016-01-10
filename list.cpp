@@ -286,7 +286,9 @@ void list::Sortuj()
     bool cosSieZmienilo = false;
     do
     {
+        cosSieZmienilo = false;
         event *biezacy = first;
+        event *poprzedni = NULL;
         while(biezacy)
         {
             if (biezacy->next) //jesli jest nastepny element
@@ -295,14 +297,19 @@ void list::Sortuj()
                 if (porownaj(biezacy->date,biezacy->next->date))
                 {
                     cosSieZmienilo = true;//musimy kolejny raz przeleciec liste, aby sie upewnic czy wszystko jest na swoim miejscu po tej zmianie
+                    if (biezacy == first) {
+                        first = biezacy->next;
+                    }
                     event* tmp = biezacy;
                     biezacy = biezacy->next;
-                    if (biezacy->next != NULL)
+                    tmp->next = biezacy->next;
                     biezacy->next = tmp;
-
-
+                    if (poprzedni) {
+                        poprzedni->next = biezacy;
+                    }
                 }
             }
+            poprzedni = biezacy;
             biezacy = biezacy->next;
         }
     }
